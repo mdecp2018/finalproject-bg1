@@ -3,7 +3,7 @@
 
  https://github.com/mdecp2018/finalproject-bg1
  
- 網站：https://mdecp2018.github.io.finalproject-bg1
+ 網站：https://mdecp2018.github.io/finalproject-bg1
  
 分組示範倉儲: https://github.com/scrum-1/scrum-1.github.io
 
