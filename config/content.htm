@@ -62,7 +62,43 @@
 <p><span><strong>Modules or package （也稱為library）</strong></span></p>
 <p>● ”modules” or “packages”：通常是其他人寫好的函數或指令，打包成一個「工具庫」<br/> 方便分享使用。（非python內建，可能會需要下載安裝）<br/>○     本課程會用到的library: numpy (array), matplotlib (基本繪圖), basemap (地圖),<br/>         netCDF (讀nc檔)<br/>● 使用方式：import module_name<br/>○     在執行工具庫內的指令之前，就要先把modules 引進來（不然python不會認得<br/>        非內建的指令）<br/>○     使用工具庫內的指令：module_name.function (or module_name.constant)<br/>○     可以使用import module_name as xxx (xxx是你自己取的縮寫）<br/>        使用指令的語法就簡化成xxx.function，例如:<br/>             import math as m<br/>             x=m.cos(m.pi)</p>
 <h1>Independent Study</h1>
-<h1>Issue ＆Solution</h1>
+<h2>Week10</h2>
+<ul>
+<li>更新<span style="color: #ff0000;"><strong> P37-18.11</strong></span></li>
+</ul>
+<p>將stop.bat以SciTE開啟,並將其內容改成,如下</p>
+<pre><span><code>@echo off
+set Disk=y
+REM 關閉 SciTE
+taskkill /IM Sc1.exe /F
+REM 關閉 python
+taskkill /IM python.exe /F
+taskkill /IM pythonw.exe /F
+REM 關閉 stunnel
+taskkill /IM stunnel.exe /F
+REM 關閉 fossil
+taskkill /IM fossil.exe /F
+rem taskkill /IM sharex.exe /F
+REM 清除 log 資料
+path=%PATH%;
+REM del /Q /F  V:\tmp\*.*
+REM 終止虛擬硬碟與目錄的對應
+subst %Disk%: /D
+REM 關閉 cmd 指令視窗
+taskkill /IM cmd.exe /F
+REM taskkill /IM mingw32 /F
+EXIT</code></span></pre>
+<ul>
+<li>使用<span style="color: #ff0000;"><strong>eric6</strong></span><span> </span>製作 <span style="color: #ff0000;"><strong>PyQt </strong></span><span style="color: #ff0000;"><strong></strong></span></li>
+</ul>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/iOBPj72CW2A" width="560"></iframe></p><h2>Week11</h2>
+<h2>Week12</h2>
+<h2>Week13</h2>
+<h2>Week14</h2>
+<h2>Week15</h2>
+<h2>Week16</h2>
+<h2>Week17</h2>
+<p></p><h1>Issue ＆Solution</h1>
 <h1>Experience</h1>
 <h2>40723201</h2>
 <h2>40723202</h2>
