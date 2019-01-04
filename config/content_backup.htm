@@ -64,10 +64,34 @@
 <h1>Independent Study</h1>
 <h2>Week10</h2>
 <ul>
-<li>更新<span style="color: #ff0000;"><strong> P37</strong></span></li>
-<li>使用<span style="color: #ff0000;"><strong>eric6</strong></span><span> </span>製作 <span style="color: #ff0000;"><strong>PyQt </strong></span></li>
+<li>更新<span style="color: #ff0000;"><strong> P37-18.11</strong></span></li>
 </ul>
-<h2>Week11</h2>
+<p>將stop.bat以SciTE開啟,並將其內容改成,如下</p>
+<pre><span><code>@echo off
+set Disk=y
+REM 關閉 SciTE
+taskkill /IM Sc1.exe /F
+REM 關閉 python
+taskkill /IM python.exe /F
+taskkill /IM pythonw.exe /F
+REM 關閉 stunnel
+taskkill /IM stunnel.exe /F
+REM 關閉 fossil
+taskkill /IM fossil.exe /F
+rem taskkill /IM sharex.exe /F
+REM 清除 log 資料
+path=%PATH%;
+REM del /Q /F  V:\tmp\*.*
+REM 終止虛擬硬碟與目錄的對應
+subst %Disk%: /D
+REM 關閉 cmd 指令視窗
+taskkill /IM cmd.exe /F
+REM taskkill /IM mingw32 /F
+EXIT</code></span></pre>
+<ul>
+<li>使用<span style="color: #ff0000;"><strong>eric6</strong></span><span> </span>製作 <span style="color: #ff0000;"><strong>PyQt </strong></span><span style="color: #ff0000;"><strong></strong></span></li>
+</ul>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/iOBPj72CW2A" width="560"></iframe></p><h2>Week11</h2>
 <h2>Week12</h2>
 <h2>Week13</h2>
 <h2>Week14</h2>
